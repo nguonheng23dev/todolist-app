@@ -24,4 +24,87 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+  font-family: 'Inter', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: rgb(var(--foreground-rgb));
+}
+
+input[type="text"] {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  padding: 0.75rem;
+  margin: 0.5rem auto 1rem auto;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+  border-color: #0070f3;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  max-width: 400px;
+  margin: 1rem auto;
+}
+
+li {
+  background: #fff;
+  padding: 0.75rem;
+  margin: 0.5rem 0;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: background 0.3s ease;
+}
+
+li:hover {
+  background: #f9f9f9;
+}
+
+li span {
+  flex-grow: 1;
+  padding-right: 0.5rem;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.25rem;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+button.mark {
+  color: #10b981; /* Emerald green */
+}
+
+button.edit {
+  color: #3b82f6; /* Blue */
+}
+
+button.remove {
+  color: #ef4444; /* Red */
 }
